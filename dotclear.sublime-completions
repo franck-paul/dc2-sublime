@@ -170,6 +170,20 @@
 		{ "trigger":	"tpl:EntryPingLink",
 			"contents":	"{{tpl:EntryPingLink}}"},
 
+		/* Languages */
+		{ "trigger":	"tpl:Languages",
+			"contents": "<tpl:Languages${1: lang=\"${2:lang_id}\"}${3: order=\"${4:desc}\"}>\n\t$0\n</tpl:Languages>"},
+		{ "trigger":	"tpl:LanguagesHeader",
+			"contents":	"<tpl:LanguagesHeader>\n\t$0\n</tpl:LanguagesHeader>"},
+		{ "trigger":	"tpl:LanguagesFooter",
+			"contents":	"<tpl:LanguagesFooter>\n\t$0\n</tpl:LanguagesFooter>"},
+		{ "trigger":	"tpl:LanguagesCode",
+			"contents":	"{{tpl:LanguagesCode}}"},
+		{ "trigger":	"tpl:LanguageIfCurrent",
+			"contents":	"<tpl:LanguageIfCurrent>\n\t$0\n</tpl:LanguageIfCurrent>"},
+		{ "trigger":	"tpl:LanguagesURL",
+			"contents":	"{{tpl:LanguagesURL}}"},
+
 		/* Templates attributes */
 		{ "trigger":	"absolute_urls",		"contents": "absolute_urls=\"1\""},
 		{ "trigger":	"age",					"contents": "age=\"${0:max_age}\""},
@@ -194,6 +208,7 @@
 		{ "trigger":	"has_entries",			"contents": "has_entries=\"1\""},
 		{ "trigger":	"ignore_pagination",	"contents": "ignore_pagination=\"${0:1}\""},
 		{ "trigger":	"iso8601",				"contents": "iso8601=\"1\""},
+		{ "trigger":	"lang",					"contents": "lang=\"${0:lang_id}\""},
 		{ "trigger":	"lastn",				"contents": "lastn=\"$0\""},
 		{ "trigger":	"length",				"contents": "length=\"$0\""},
 		{ "trigger":	"level",				"contents": "level=\"${0:1}\""},
