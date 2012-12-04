@@ -3,14 +3,14 @@
 	"completions":
 	[
 		/* l10n */
-		{ "trigger":	"tpl:lang",	"contents": "{{tpl:lang $1}}"	}
+		{ "trigger":	"tpl:lang",	"contents": "{{tpl:lang $1}}"	},
 
 		/* Loops test tags */
-		{ "trigger":	"tpl:LoopPosition",	"contents": "<tpl:LoopPosition$1>\n$0</tpl:LoopPosition>\n"}
+		{ "trigger":	"tpl:LoopPosition",	"contents": "<tpl:LoopPosition$1>\n$0</tpl:LoopPosition>\n"},
 
 		/* Tags attributes */
-		{ "trigger":	"start", "contents": "start=\"$1\""}
-		{ "trigger":	"length", "contents": "length=\"$1\""}
+		{ "trigger":	"start", "contents": "start=\"$1\""},
+		{ "trigger":	"length", "contents": "length=\"$1\""},
 		{ "trigger":	"even", "contents": "even=\"$1\""}
 	]
 }
