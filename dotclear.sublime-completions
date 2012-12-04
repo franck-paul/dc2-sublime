@@ -1,0 +1,7 @@
+{
+	"scope": "text.html",
+	"completions":
+	[
+		{ "trigger":	"tpl:lang",	"contents": "{{tpl:lang $0}}"	}
+	]
+}
