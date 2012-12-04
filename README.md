@@ -1,8 +1,6 @@
 Plugin Sublime-Dotclear pour Sublime Text 2
 
-#INSTALLATION !
-
-
+#Installation
 
 Ce plugin s’installe via [package control](http://wbond.net/sublime_packages/package_control).
 La procédure d’installation de package control se trouve [ici](http://wbond.net/sublime_packages/package_control/installation).
