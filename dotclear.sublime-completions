@@ -10,10 +10,10 @@
 
 		/* Loops test tags */
 		{ "trigger":	"tpl:LoopPosition",
-		"contents": "<tpl:LoopPosition${1: start=\"${2:0}\"}${3: length=\"${4:1}\"}${5: even=\"${6:1}\"}>$0</tpl:LoopPosition>"},
+		"contents": "<tpl:LoopPosition${1: start=\"${2:0}\"}${3: length=\"${4:1}\"}${5: even=\"${6:1}\"}>\n\t$0\n</tpl:LoopPosition>"},
 
 		/* Archives */
-		{ "trigger":	"Archives",
+		{ "trigger":	"tpl:Archives",
 		"contents": "<tpl:Archives${1: type=\"${2:month}\"}${3: category=\"${4:cat_id}\"}${5: no_context=\"${6:1}\"}${7: order=\"${8:desc}\"}${9: post_type=\"${10:post}\"}${11: post_lang=\"${12:lang_id}\"}>$0</tpl:Archives>"},
 
 		/* Tags attributes */
