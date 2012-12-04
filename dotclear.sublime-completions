@@ -28,9 +28,9 @@
 		{ "trigger":	"tpl:ArchiveEntriesCount",
 			"contents": "{{tpl:ArchiveEntriesCount}}"},
 		{ "trigger":	"tpl:ArchiveNext",
-			"contents":	"<tpl:ArchiveNext${1: type=\"${2:month}\"}${3: post_type=\"${4:post}\"}${5: post_lang=\"${6:lang_id}\"}>\n\t$0</tpl:ArchiveNext>"},
+			"contents":	"<tpl:ArchiveNext${1: type=\"${2:month}\"}${3: post_type=\"${4:post}\"}${5: post_lang=\"${6:lang_id}\"}>\n\t$0\n</tpl:ArchiveNext>"},
 		{ "trigger":	"tpl:ArchivePrevious",
-			"contents":	"<tpl:ArchivePrevious${1: type=\"${2:month}\"}${3: post_type=\"${4:post}\"}${5: post_lang=\"${6:lang_id}\"}>\n\t$0</tpl:ArchivePrevious>"},
+			"contents":	"<tpl:ArchivePrevious${1: type=\"${2:month}\"}${3: post_type=\"${4:post}\"}${5: post_lang=\"${6:lang_id}\"}>\n\t$0\n</tpl:ArchivePrevious>"},
 		{ "trigger":	"tpl:ArchiveURL",
 			"contents": "{{tpl:ArchiveURL}}"},
 
