@@ -6,11 +6,8 @@
 		{ "trigger":	"tpl:lang",	"contents": "{{tpl:lang $0}}"	},
 
 		/* Loops test tags */
-		{ "trigger":	"tpl:LoopPosition",	"contents": 
-			"<tpl:LoopPosition${1: start=\"${2:0}\"}${3: length=\"${4:1}\"}${5: even=\"${6:1}\"}>
-				$0
-			</tpl:LoopPosition>"
-		},
+		{ "trigger":	"tpl:LoopPosition",
+		"contents": "<tpl:LoopPosition${1: start=\"${2:0}\"}${3: length=\"${4:1}\"}${5: even=\"${6:1}\"}>$0</tpl:LoopPosition>"},
 
 		/* Tags attributes */
 		{ "trigger":	"start", "contents": "start=\"$0\""},
