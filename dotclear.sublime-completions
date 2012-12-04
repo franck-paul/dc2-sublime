@@ -2,6 +2,9 @@
 	"scope": "text.html",
 	"completions":
 	[
+		/* Include */
+		{ "trigger":	"tpl:include", "contents": "{{tpl:include src=\"$0\"}}"},
+
 		/* l10n */
 		{ "trigger":	"tpl:lang",	"contents": "{{tpl:lang $0}}"	},
 
@@ -9,9 +12,26 @@
 		{ "trigger":	"tpl:LoopPosition",
 		"contents": "<tpl:LoopPosition${1: start=\"${2:0}\"}${3: length=\"${4:1}\"}${5: even=\"${6:1}\"}>$0</tpl:LoopPosition>"},
 
+		/* Archives */
+		{ "trigger":	"Archives",
+		"contents": "<tpl:Archives${1: type=\"${2:month}\"}${3: category=\"${4:cat_id}\"}${5: no_context=\"${6:1}\"}${7: order=\"${8:desc}\"}${9: post_type=\"${10:post}\"}${11: post_lang=\"${12:lang_id}\"}>$0</tpl:Archives>"},
+
 		/* Tags attributes */
 		{ "trigger":	"start", "contents": "start=\"$0\""},
 		{ "trigger":	"length", "contents": "length=\"$0\""},
-		{ "trigger":	"even", "contents": "even=\"$0\""}
+		{ "trigger":	"even", "contents": "even=\"$0\""},
+
+		/* Conditionnal attributes */
+		{ "trigger":	"or", "contents": "operator=\"or\""},
+		{ "trigger":	"and", "contents": "operator=\"and\""},
+
+		/* Tags filters */
+		{ "trigger":	"remove_html", "contents": "remove_html=\"1\""},
+		{ "trigger":	"encode_xml", "contents": "encode_xml=\"1\""},
+		{ "trigger":	"encode_html", "contents": "encode_html=\"1\""},
+		{ "trigger":	"cut_string", "contents": "cut_string=\"$0\""},
+		{ "trigger":	"lower_case", "contents": "lower_case=\"1\""},
+		{ "trigger":	"upper_case", "contents": "upper_case=\"1\""},
+		{ "trigger":	"capitalize", "contents": "capitalize=\"1\""}
 	]
 }
