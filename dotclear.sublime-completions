@@ -360,7 +360,7 @@
 
 		/* Tags plugin */
 		{ "trigger":	"tpl:Tags",
-			"contents":	"<tpl:Tags${1: type=\"${2:tag}\"}${3:limit=\"$4\"}${5: sortby=\"${6:count}\"}${7: order=\"${8:desc}\"}>\n\t$0\n</tpl:Tags>"},
+			"contents":	"<tpl:Tags${1: type=\"${2:tag}\"}${3: limit=\"$4\"}${5: sortby=\"${6:count}\"}${7: order=\"${8:desc}\"}>\n\t$0\n</tpl:Tags>"},
 		{ "trigger":	"tpl:TagsHeader",
 			"contents":	"<tpl:TagsHeader>\n\t$0\n</tpl:TagsHeader>"},
 		{ "trigger":	"tpl:TagsFooter",
@@ -384,6 +384,118 @@
 		{ "trigger":	"tpl:TagFeedURL",
 			"contents":	"{{tpl:TagFeedURL${1: type=\"${2:rss2}\"}}}"},
 
+		/* Widgets plugin */
+		{ "trigger":	"tpl:Widgets",
+			"contents":	"{{tpl:Widgets${1: type=\"${2:nav}\"}${3: disable=\"$4\"}}}"},
+		{ "trigger":	"tpl:Widget",
+			"contents":	"<tpl:Widget id=\"$1\">\n\t<setting name=\"${2:name}\">${3:value}</setting>\n</tpl:Widget>"},
+		{ "trigger":	"setting",
+			"contents": "<setting name=\"${1:name}\">${2:value}</setting>"},
+
+		/* Widgets */
+		{ "trigger":	"tpl:WidgetSearch",
+			"contents":	"<tpl:Widget id=\"search\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetNavigation",
+			"contents":	"<tpl:Widget id=\"navigation\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetBestof",
+			"contents":	"<tpl:Widget id=\"bestof\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"orderby\">${1:asc}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetLangs",
+			"contents":	"<tpl:Widget id=\"langs\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetCategories",
+			"contents":	"<tpl:Widget id=\"categories\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"postcount\">${1:0}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetSubscribe",
+			"contents":	"<tpl:Widget id=\"subscribe\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"type\">${1:atom}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetFeed",
+			"contents":	"<tpl:Widget id=\"feed\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"url\">${1:feed_url}</setting>\n
+			\t<setting name=\"limit\">${1:10}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetText",
+			"contents":	"<tpl:Widget id=\"text\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"text\">$1</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetLastPosts",
+			"contents":	"<tpl:Widget id=\"lastposts\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"type\">${1:post}</setting>\n
+			\t<setting name=\"category\">$1</setting>\n
+			\t<setting name=\"tag\">$1</setting>\n
+			\t<setting name=\"limit\">${1:10}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetLastComments",
+			"contents":	"<tpl:Widget id=\"lastcomments\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"limit\">${1:10}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetLinks",
+			"contents":	"<tpl:Widget id=\"links\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"category\">$1</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetPages",
+			"contents":	"<tpl:Widget id=\"pages\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"sortby\">${1:post_title}</setting>\n
+			\t<setting name=\"orderby\">${1:asc}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetSimpleMenu",
+			"contents":	"<tpl:Widget id=\"simplemenu\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+		{ "trigger":	"tpl:WidgetTags",
+			"contents":	"<tpl:Widget id=\"tags\">\n
+			\t<setting name=\"title\">${1:title}</setting>\n
+			\t<setting name=\"limit\">${1:20}</setting>\n
+			\t<setting name=\"sortby\">${1:meta_id_lower}</setting>\n
+			\t<setting name=\"orderby\">${1:asc}</setting>\n
+			\t<setting name=\"alltagslinktitle\">$1</setting>\n
+			\t<setting name=\"homeonly\">${1:0}</setting>\n
+			\t<setting name=\"class\">${1:css_class}</setting>\n
+			</tpl:Widget>"},
+
 		/* Templates attributes */
 		{ "trigger":	"absolute_urls",		"contents": "absolute_urls=\"1\""},
 		{ "trigger":	"age",					"contents": "age=\"${0:max_age}\""},
@@ -403,6 +515,7 @@
 		{ "trigger":	"creadt",				"contents": "creadt=\"1\""},
 		{ "trigger":	"current_mode",			"contents": "current_mode=\"${0:mode}\""},
 		{ "trigger":	"current_tpl",			"contents": "current_tpl=\"${0:tpl}\""},
+		{ "trigger":	"disable",				"contents": "disable=\"$0\""},
 		{ "trigger":	"even",					"contents": "even=\"${0:1}\""},
 		{ "trigger":	"end",					"contents": "end=\"${0:1}\""},
 		{ "trigger":	"extended",				"contents": "extended=\"${0:1}\""},
@@ -432,6 +545,7 @@
 		{ "trigger":	"limit",				"contents": "limit=\"$0\""},
 		{ "trigger":	"more",					"contents": "more=\"${0:%s comments}\""},
 		{ "trigger":	"more",					"contents": "more=\"${0:%s trackbacks}\""},
+		{ "trigger":	"name",					"contents": "name=\"${0:name}\""},
 		{ "trigger":	"none",					"contents": "none=\"${0:no comment}\""},
 		{ "trigger":	"none",					"contents": "none=\"${0:no trackback}\""},
 		{ "trigger":	"no_category",			"contents": "no_category=\"1\""},
@@ -470,6 +584,7 @@
 		{ "trigger":	"string",				"contents": "string=\"${0:%1$s}\""},
 		{ "trigger":	"type",					"contents": "type=\"${0:atom}\""},
 		{ "trigger":	"type",					"contents": "type=\"${0:month}\""},
+		{ "trigger":	"type",					"contents": "type=\"${0:nav}\""},
 		{ "trigger":	"type",					"contents": "type=\"${0:post}\""},
 		{ "trigger":	"type",					"contents": "type=\"${0:rss2}\""},
 		{ "trigger":	"type",					"contents": "type=\"${0:tag}\""},
