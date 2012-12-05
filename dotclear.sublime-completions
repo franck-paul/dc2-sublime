@@ -354,6 +354,10 @@
 		{ "trigger":	"tpl:BlogrollXbelLink",
 			"contents":	"{{tpl:BlogrollXbelLink}}"},
 
+		/* SimpleMenu plugin */
+		{ "trigger":	"tpl:SimpleMenu",
+			"contents":	"{{tpl:SimpleMenu}}"},
+
 		/* Templates attributes */
 		{ "trigger":	"absolute_urls",		"contents": "absolute_urls=\"1\""},
 		{ "trigger":	"age",					"contents": "age=\"${0:max_age}\""},
