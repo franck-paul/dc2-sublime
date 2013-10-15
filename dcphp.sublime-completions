@@ -1,0 +1,18 @@
+{
+	"scope": "source.php",
+	"completions":
+	[
+		{ "trigger":	"breadcrumb",
+			"contents":	"echo dcPage::breadcrumb(array(\n\thtml::escapeHTML(\\$core->blog->name) => '',\n\t__('${1:Page title}') => ''\n)).dcPage::notices();"
+		},
+		{ "trigger":	"addnotice",
+			"contents":	"dcPage::addSuccessNotice(__('${1:Notice title}'));"
+		},
+		{ "trigger":	"addwarning",
+			"contents":	"dcPage::addWarningNotice(__('${1:Notice title}'));"
+		},
+		{ "trigger":	"adderror",
+			"contents":	"dcPage::addErrorNotice(__('${1:Notice title}'));"
+		}
+	]
+}
